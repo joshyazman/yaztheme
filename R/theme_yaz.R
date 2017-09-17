@@ -5,10 +5,9 @@
 #' @param base_family What font do you want to use? Defaults to sans
 #' @export theme_yaz
 
-require(ggplot2)
 require(ggthemes)
 theme_yaz <- function(base_size = 10, base_family = "sans") {
-  (theme_foundation(base_size = base_size, base_family = base_family)+
+  (ggthemes::theme_foundation(base_size = base_size, base_family = base_family)+
      theme(
        rect = element_rect(fill = '#F0F0F0',
                            linetype = 0, colour = NA),
