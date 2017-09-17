@@ -7,14 +7,14 @@
 
 require(ggplot2)
 require(ggthemes)
-theme_yaz <- function(base_size = 10, base_family = "sans") {
-  (theme_foundation(base_size = base_size, base_family = base_family)+
+theme_yaz <- function(base_family = "sans") {
+  (ggthemes::theme_foundation(base_size = base_size, base_family = base_family)+
      theme(
        rect = element_rect(fill = '#F0F0F0',
                            linetype = 0, colour = NA),
        line = element_line(colour = "black"),
        text = element_text(colour = "#3C3C3C"),
-       axis.text = element_text(),
+       axis.text = element_text(size = 10),
        axis.line.x = element_line(colour = 'black'),
        axis.line.y = element_line(colour = 'black'),
        legend.background = element_rect(),
@@ -25,8 +25,8 @@ theme_yaz <- function(base_size = 10, base_family = "sans") {
        panel.grid.major =element_blank(),
        panel.grid.minor = element_blank(),
        plot.title = element_text(hjust = 0, size = rel(1.25), face = "bold"),
-       axis.title.x = element_text(size = rel(1), face = "bold"),
-       axis.title.y = element_text(size = rel(1), face = "bold"),
+       axis.title.x = element_text(size = 8, face = "bold"),
+       axis.title.y = element_text(size = 8, face = "bold"),
        plot.margin = unit(c(1, 1, 1, 1), "lines"),
        strip.background = element_rect()))
 }
