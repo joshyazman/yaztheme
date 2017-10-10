@@ -2,3 +2,4 @@
 
 export(theme_yaz)
 export(yaz_cols)
+export(slate_cols)
