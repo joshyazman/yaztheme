@@ -5,3 +5,10 @@
 #' @export yaz_cols
 
 yaz_cols <- c("#4581b2", "#7b0905", "#b7d165", "#30408d", "#44f270", "#ff0087", "#229743", "#f67afe")
+
+#' @name slate_cols
+#' 
+#' Colors from Slate Magazine's design scheme. 
+#' @export slate_cols
+
+slate_cols <- c('#660033','#281B21','#F0FF00','#21DBE7','#191919','#E8E8E8')
