@@ -1,4 +1,3 @@
-
 #' @name slate_cols
 #' 
 #' Colors from Slate Magazine's design scheme. 
